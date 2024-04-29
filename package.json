@@ -1,0 +1,15 @@
+{
+  "name": "example-monorepo",
+  "version": "0.0.0",
+  "scripts": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.4",
+  "main": "index.js",
+  "author": "mizuki_r",
+  "license": "UNLICENSED"
+}
