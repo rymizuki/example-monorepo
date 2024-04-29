@@ -1,6 +1,6 @@
 {
   "name": "@example-monorepo/express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "main": "build/index.js",
   "types": "src/index.ts",
