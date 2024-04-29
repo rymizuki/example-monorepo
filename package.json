@@ -5,11 +5,13 @@
     "build": "turbo run build",
     "lint:eslint": "turbo run lint:eslint",
     "lint:prettier": "turbo run lint:prettier",
-    "version": "turbo run version",
-    "publish": "turbo run publish",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish": "changeset publish",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@example-monorepo/dev-config": "*",
     "turbo": "^1.13.3"
   },
