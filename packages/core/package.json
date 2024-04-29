@@ -7,9 +7,11 @@
   "scripts": {
     "build": "tsup src/*",
     "lint:eslint": "eslint --max-warnings 0 --ext .ts,.tsx .",
-    "lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check"
+    "lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check",
+    "changeset": "changeset"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@example-monorepo/dev-config": "*",
     "tsup": "^8.0.2"
   }
