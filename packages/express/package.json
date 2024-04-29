@@ -7,16 +7,12 @@
   "scripts": {
     "build": "tsup src/*",
     "lint:eslint": "eslint --max-warnings 0 --ext .ts,.tsx .",
-    "lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check",
-    "changeset": "changeset",
-    "version": "changeset version",
-    "publish": "changeset publish"
+    "lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check"
   },
   "dependencies": {
     "@example-monorepo/core": "*"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
     "@example-monorepo/dev-config": "*",
     "@types/express": "^4.17.21",
     "express": "^4.19.2",
