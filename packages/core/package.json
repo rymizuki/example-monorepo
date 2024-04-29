@@ -8,7 +8,9 @@
     "build": "tsup src/*",
     "lint:eslint": "eslint --max-warnings 0 --ext .ts,.tsx .",
     "lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",

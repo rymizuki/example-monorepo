@@ -18,6 +18,15 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "version": {
+      "cache": false,
+      "persistent": true
+    },
+    "publish": {
+      "cache": false,
+      "persistent": true
     }
+
   }
 }

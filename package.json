@@ -5,6 +5,8 @@
     "build": "turbo run build",
     "lint:eslint": "turbo run lint:eslint",
     "lint:prettier": "turbo run lint:prettier",
+    "version": "turbo run version",
+    "publish": "turbo run publish",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
