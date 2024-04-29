@@ -14,5 +14,8 @@
     "@changesets/cli": "^2.27.1",
     "@example-monorepo/dev-config": "*",
     "tsup": "^8.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
