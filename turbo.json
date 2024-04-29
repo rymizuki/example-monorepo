@@ -9,6 +9,12 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
+    "lint:prettier": {
+      "dependsOn": ["^lint:prettier"]
+    },
+    "lint:eslint": {
+      "dependsOn": ["^lint:eslint"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

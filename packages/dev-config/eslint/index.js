@@ -1,3 +1,5 @@
+const path = require('path')
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
@@ -9,7 +11,8 @@ module.exports = {
   parserOptions: {
     sourceType: "module",
     ecmaVersion: 2023,
-    project: ["./tsconfig.eslint.json"],
+    project: ['./base.json'],
+    tsconfigRootDir: path.resolve(__dirname, '../tsconfig')
   },
   plugins: ["@typescript-eslint"],
   extends: [
@@ -17,7 +20,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
-  ignorePatterns: ["src/**/*.js"],
+  ignorePatterns: [".eslintrc.js", 'build', 'tsup.config.ts'],
   rules: {},
   overrides: [
     {

@@ -2,8 +2,8 @@
   "name": "example-monorepo",
   "version": "0.0.0",
   "scripts": {
-    "lint:eslint": "eslint --max-warnings 0 --ext .ts,.tsx .",
-    "lint:prettier": "prettier './**/*.{ts,tsx,js,json,css}' --check --plugin-search-dir=../../node_modules",
+    "lint:eslint": "turbo run lint:eslint",
+    "lint:prettier": "turbo run lint:prettier",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
