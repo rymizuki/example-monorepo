@@ -2,15 +2,17 @@
 	"name": "@example-monorepo/core",
 	"version": "0.0.0",
 	"private": true,
-  "main": "build/index.js",
-  "types": "src/index.ts",
+	"main": "build/index.js",
+	"types": "src/index.ts",
 	"scripts": {
-    "build": "tsup src/*",
-    "lint:eslint": "eslint --max-warnings 0 --ext .ts,.tsx .",
-    "lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check"
-  },
+		"build": "tsup src/*",
+		"lint:eslint": "eslint --max-warnings 0 --ext .ts,.tsx .",
+		"lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check",
+    "changeset": "changeset"
+	},
 	"devDependencies": {
-    "@example-monorepo/dev-config": "*",
+		"@changesets/cli": "^2.27.1",
+		"@example-monorepo/dev-config": "*",
 		"tsup": "^8.0.2"
 	}
 }
