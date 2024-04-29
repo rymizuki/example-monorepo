@@ -7,10 +7,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.7.1",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
+    "@example-monorepo/dev-config": "*",
+    "turbo": "^1.13.3"
   },
   "engines": {
     "node": ">=18"
@@ -18,5 +16,9 @@
   "packageManager": "npm@10.2.4",
   "main": "index.js",
   "author": "mizuki_r",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
