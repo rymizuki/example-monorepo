@@ -1,0 +1,21 @@
+{
+  "name": "@example-monorepo/express",
+  "version": "0.0.0",
+  "private": true,
+  "main": "build/index.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsup src/*",
+    "lint:eslint": "eslint --max-warnings 0 --ext .ts,.tsx .",
+    "lint:prettier": "prettier './src/**/*.{ts,tsx,js,json,css}' --check"
+  },
+  "dependencies": {
+    "@example-monorepo/core": "*"
+  },
+  "devDependencies": {
+    "@example-monorepo/dev-config": "*",
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "tsup": "^8.0.2"
+  }
+}

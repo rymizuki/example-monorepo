@@ -2,6 +2,7 @@
   "name": "example-monorepo",
   "version": "0.0.0",
   "scripts": {
+    "build": "turbo run build",
     "lint:eslint": "turbo run lint:eslint",
     "lint:prettier": "turbo run lint:prettier",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
